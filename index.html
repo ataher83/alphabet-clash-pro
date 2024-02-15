@@ -8,15 +8,94 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script src="https://kit.fontawesome.com/b0482ba0b4.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <section class="home"></section>
+    <main class="min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center bg-black flex justify-center items-center">
 
-    <section class="play-ground"></section>
+        <section class="hidden home text-white flex flex-col items-center gap-8 ">
+            <h1 class="font- font-bold text-8xl">ALPHABET CLASH</h1>
+            <p>Unleash Your Keyboard Kung Fu:Press "Enter" to Play</p>
+            <button class="text-black font-bold bg-white p-2 rounded-md">Play Now</button>
+        </section>
 
-    <section class="score"></section>
+
+        <section class="hidden play-ground flex flex-col gap-10 items-center">
+
+            <div class="artboard artboard-horizontal phone-6 border-8 border-solid border-slate-600 bg-white opacity-70 flex flex-col justify-center items-center gap-10 ">
+                <span class=" text-white bg-slate-600 -mt-[120px] p-1">Don't watch keyboard while playing</span>
+                <div class="text-center text-9xl font-bold">Y </div>
+            </div>
+
+            <div class="keyboard">
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd bg-orange-400">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                  </div>
+            </div>
+
+            <div class="live-status flex gap-[750px]">
+                <button class="btn bg-purple-500 rounded-3xl border-none text-white ">
+                    <span class="text-2xl">Life</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" h-10 w-10" fill="white" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <i class="fa-solid fa-bolt border-2 border-purple-500 rounded-full p-1 bg-white ml-[-25px] mt-2  text-purple-500"></i>
+                    <span class="text-2xl">1</span>
+                </button>
+                <button class="btn bg-violet-800 rounded-3xl border-none text-white ">
+                    <span class="text-2xl">Score</span>
+                    <i class="fa-solid fa-dollar-sign border-2  border-purple-500 rounded-full p-1 bg-white   text-purple-500"></i>
+                    <span class="text-2xl">1</span>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="score">
+            <div class="card w-96 bg-base-100 shadow-xl bg-violet-400 text-white ">
+                <div class="card-body flex-col items-center">
+                  <h2 class="font-bold text-5xl">Score: 14</h2>
+                  <div class="">
+                    <button class="btn font-bold">Play Again</button>
+                  </div>
+                  <p>Practise will make you Pro</p>
+                </div>
+              </div>
+        </section>
+    </main>
     
+
 </body>
 </html>
